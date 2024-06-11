@@ -1,5 +1,7 @@
 name: Reto04
 on:
+ issues:
+  types: [opened]
   workflow_dispatch:
 jobs: 
  Job1:
