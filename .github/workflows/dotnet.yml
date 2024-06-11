@@ -15,7 +15,6 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-    continue-on-error: true
     steps:
     - uses: actions/checkout@v4
     - name: Setup .NET
@@ -27,4 +26,4 @@ jobs:
     - name: Build
       run: dotnet build --no-restore  Application/src/RazorPagesTestSample/RazorPagesTestSample.csproj  
     - name: Test
-      run: dotnet test --no-build --verbosity normal Application/tests/RazorPagesTestSample.Tests/RazorPagesTestSample.Tests.csprojts.csproj
+      run: dotnet test --no-build --verbosity normal Application/tests/RazorPagesTestSample.Tests/RazorPagesTestSample.Tests.csproj
