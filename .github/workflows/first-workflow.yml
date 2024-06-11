@@ -13,6 +13,9 @@ jobs:
  Job2:
    runs-on: ubuntu-latest
    steps:
-    - name: Checkout
-      uses: actions/checkout@v4
+    - name: Ship it
+      uses: mscoutermarsh/cowsays-action@master
+      with:
+        text: 'ship ship ship!'
+        color: 'red'
   
