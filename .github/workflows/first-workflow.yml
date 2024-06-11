@@ -11,6 +11,7 @@ jobs:
        run: echo 'STEP 2'}
 
  Job2:
+   needs: Job1
    runs-on: ubuntu-latest
    steps:
     - name: Ship it
