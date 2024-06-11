@@ -4,7 +4,7 @@ name: Deploy Infrastructure
 on:
   workflow_dispatch:
 env:
- entorno: dev
+ entorno: prod
 
 jobs:
   deploy:
